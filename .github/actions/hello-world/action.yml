@@ -1,17 +1,23 @@
-name: "Hello Actions"
-description: "Greet someone"
-author: "ggeorgie@redhat.com"
+name: "My Action"
+
+description: "Say hello with Github  Actions"
+
 
 inputs:
-  MY_NAME:
-    description: "Who to greet"
+  first-greeting:
+    description: "Who would like to greet in console"
+    required: true
+    default: "Hubot"
+
+  second-greeting:
+    description: "Another person to greet"
+    required: true
+    default: "Mona the cat"
+
+  third-greeting:
+    description: "A third greeting"
     required: false
-    default: "World"
 
 runs:
-  using: "docker"
-  image: "Dockerfile"
-
-branding:
-  icon: "mic"
-  color: "purple"
+  using: "node12"
+  main: "main.js"
