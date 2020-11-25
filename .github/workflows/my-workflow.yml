@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v1
-      - name: hello action
+      - uses: actions/checkout@v1
+
+      - name: hello-action
         uses: ./.github/actions/hello-world
