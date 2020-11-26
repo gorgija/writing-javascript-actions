@@ -1,0 +1,11 @@
+name: "External API Action"
+
+description: "Use a external API to retrieve and show jokes"
+
+outputs:
+  joke-output:
+    description: The resulting joke from icansayjokes apiVersion
+
+runs:
+  using: "node12"
+  main: "main.js"
