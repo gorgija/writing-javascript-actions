@@ -14,6 +14,7 @@ const options = {
 }
 
 async function getJoke() {
+    console.log("Starting  jokes");
     const req = await request(options);
     return req.joke
 }
