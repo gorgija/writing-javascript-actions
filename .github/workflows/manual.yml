@@ -10,4 +10,4 @@ jobs:
      steps:
        - uses: geored/indy-action@v1
          with:
-           url: ${{ secrets.WEBHOOK_URLS }}
+           gchat-webhooks: ${{ secrets.WEBHOOK_URLS }}
