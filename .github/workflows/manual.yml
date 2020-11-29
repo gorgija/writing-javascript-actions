@@ -5,7 +5,7 @@ on:
     types: [labeled]
 
 jobs:
-  chat:
+  gchat:
      runs-on: ubuntu-latest
      steps:
        - uses: geored/indy-action@v1
