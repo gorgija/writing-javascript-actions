@@ -8,6 +8,6 @@ jobs:
   gchat:
      runs-on: ubuntu-latest
      steps:
-       - uses: geored/indy-action@v1
+       - uses: geored/indy-action
          with:
            url: ${{ secrets.WEBHOOK_URLS }}
