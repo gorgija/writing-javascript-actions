@@ -1,0 +1,15 @@
+name: Release|New/Reopened PR
+
+on:
+  release:
+    types: [created]
+  pull_request:
+    types: [opened, reopened,labeled]
+
+jobs:
+  chat:
+     runs-on: ubuntu-latest
+     steps:
+       - uses: geored/indy-action@v1
+         with:
+           url: ${{ secrets.WEBHOOK_URLS }}
